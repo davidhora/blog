@@ -158,6 +158,7 @@ return [
 
         /* Providers do Zizaco para controle de permissões de usuário*/
         Zizaco\Entrust\EntrustServiceProvider::class,
+        Collective\Html\HtmlServiceProvider::class,
 
     ],
 
@@ -207,6 +208,8 @@ return [
 
         /*Aliase do Entrust para Controle de permissões de usuário*/
         'Entrust'   => Zizaco\Entrust\EntrustFacade::class,
+        'Form' => Collective\Html\FormFacade::class,
+        'Html' => Collective\Html\HtmlFacade::class,
 
     ],
 
